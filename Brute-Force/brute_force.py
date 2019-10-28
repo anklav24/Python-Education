@@ -3,7 +3,7 @@ from threading import Thread
 
 from generators.from_users_file import get_next_str as get_next_login
 # from generators.from_passwords_file import get_next_str as get_next_password
-from generators.combs import get_next_str as get_next_password
+from generators.from_passwords_file import get_next_str as get_next_password
 from requesters.forms_query import request
 
 hacked_users = {}
@@ -34,7 +34,7 @@ def hack(end_time):
             login = get_next_login(password)
 
             step += 1
-            if step % 500 == 0:
+            if step % 100 == 0:
                 print(step, login, password)
 
         password = get_next_password(password_state)
@@ -47,13 +47,13 @@ def hack_threaded(threads, seconds):
         t = Thread(target=hack, args=(end,))
         t.start()
         run_threads.append(t)
-        # print('thread', t_id, 'run')
+        print('thread', t_id, 'run')
     for t in run_threads:
         t.join(timeout=seconds)
-        # print(t, 'stopped')
+        print(t, 'stopped')
 
 
 if __name__ == '__main__':
-    hack_threaded(threads=50, seconds=1000000)
+    hack_threaded(threads=5, seconds=30)
     print('Result')
     print(hacked_users)
