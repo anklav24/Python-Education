@@ -1,2 +1,2 @@
-# Weather-pyown
-Получаем прогноз погоды.
+﻿# Weather-pyown
+Получаем прогноз погоды через API OpenWeatherMap
