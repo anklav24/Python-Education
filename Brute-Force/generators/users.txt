@@ -1,0 +1,4 @@
+cat
+admin
+root
+administrator
