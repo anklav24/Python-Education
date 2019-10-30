@@ -9,6 +9,6 @@ def printMax(a, b):
 
 printMax(1, 4)  # straight forward value Прямая передача значений
 
-# x = 5
-# y = 6
-# printMax(x, y) # передача переменных в качестве аргументов
+x = 5
+y = 6
+printMax(x, y)  # передача переменных в качестве аргументов
