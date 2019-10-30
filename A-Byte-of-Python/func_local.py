@@ -1,5 +1,6 @@
 x = 50
 
+
 # shadows name from outer scope
 def func(x):
     print('x equals', x)
@@ -9,4 +10,8 @@ def func(x):
 
 func(x)
 print('x по прежнему', x)
+print()
 
+x = input('Input x = ')
+func(x)
+print('Now x equals', x)
