@@ -8,11 +8,10 @@ for item in shoplist:
 print()
 print()
 
-print('Also need buy some rice.')
+print('Also, need buy some rice.')
 shoplist.append('Rice')
 print('Now my shopping list such is:', shoplist)
 print()
-
 print('I\'ll sort my shopping list')
 shoplist.sort()
 print('The sorted list looks like that:', shoplist)
