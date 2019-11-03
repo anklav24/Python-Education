@@ -5,9 +5,6 @@ print()
 age = int(input('How old are you ' + name + '? : '))
 print()
 
-# Little test
-# for i in range(200):
-#     x = age + i
 x = age + 1
 
 print('А я думал тебе', x, end=' ')
