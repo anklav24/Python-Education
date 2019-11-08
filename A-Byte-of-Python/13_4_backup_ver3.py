@@ -18,7 +18,8 @@ now = time.strftime('%Y%m%d-%H%M%S')
 # Запрашиваем комментарий пользователя для имени файла
 comment = input('Введите комментарий --> ')
 if len(comment) == 0: # проверяем, введён ли комментарий
-    target = today + os.sep + now + '.zip'
+    target = today + os.sep +
+             now + '.zip'
 else:
     target = today + os.sep + now + '_' + comment.replace(' ', '_') + '.zip'
 
