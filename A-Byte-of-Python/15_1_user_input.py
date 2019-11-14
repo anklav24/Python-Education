@@ -9,7 +9,7 @@ def is_palindrome(text):
 while True:
     something = input('Input text: ')
     if is_palindrome(something):
-        print("Yes, it is a palindrome.")
+        print("Yes, it's a palindrome.")
     else:
         print("No, it's not palindrome.")
     print()
