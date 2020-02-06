@@ -24,28 +24,28 @@ Sample Output 2:
 4
 
 Напишите программу. Тестируется через stdin → stdout"""
-# matrix = []
-# end = ''
-# while not end:
-#     matrix += [[i for i in input().split()]]
-#     if matrix[-1][-1] == 'end':
-#         end = True
-#         del matrix[-1]
-#         matrix = [[int(values) for values in lists] for lists in matrix]
-# print(matrix)
-matrix = [[9, 5, 3], [0, 7, -1], [-5, 2, 9]]
-print(matrix)
-
-new_matrix = []
-for i in range(len(matrix)):
-    for j in matrix[i]:
-        for di in range(-1, 2):
-            for dj in range(-1, 2):
-                ai = i + di
-                aj = j + dj
-                if 0 <= ai < len(matrix) and 0 <= aj < len(matrix[i]):
-                    new_matrix[i][j] += 1
+matrix = []
+end = ''
+while not end:
+    matrix += [[i for i in input().split()]]
+    if matrix[-1][-1] == 'end':
+        end = True
+        del matrix[-1]
+        matrix = [[int(values) for values in lists] for lists in matrix]
+new_matrix = [[0 for j in range(len(matrix[i]))] for i in range(len(matrix))]
 
 for i in range(len(matrix)):
     for j in range(len(matrix[i])):
-        print(new_matrix[i][j], end='')
+        if i == len(matrix) - 1 and j == len(matrix[i]) - 1:
+            new_matrix[i][j] = matrix[i-1][j] + matrix[i][-len(matrix[i])] + matrix[-len(matrix)][j] + matrix[i][j - 1]
+        elif j == len(matrix[i]) - 1:
+            new_matrix[i][j] = matrix[i-1][j] + matrix[i][-len(matrix[i])] + matrix[i+1][j] + matrix[i][j-1]
+        elif i == len(matrix) - 1:
+            new_matrix[i][j] = matrix[i-1][j] + matrix[i][j+1] + matrix[-len(matrix)][j] + matrix[i][j-1]
+        else:
+            new_matrix[i][j] = matrix[i-1][j] + matrix[i][j+1] + matrix[i+1][j] + matrix[i][j-1]
+
+for i in range(len(new_matrix)):
+    for j in range(len(new_matrix[i])):
+        print(new_matrix[i][j], end=' ')
+    print()
