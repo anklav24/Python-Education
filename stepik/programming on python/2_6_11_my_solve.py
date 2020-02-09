@@ -14,7 +14,7 @@ Sample Output:
 
 Тестируется через stdin → stdout
 """
-n = 11
+n = 5
 # n = int(input())
 m = [[0 for j in range(n)] for i in range(n)]
 count = 1
@@ -22,16 +22,20 @@ a = 0
 
 for i in range(int(n/2 + 1)):
     for j in range(a, n - a):
-        m[i][j] = count
+        # m[i][j] = count
+        m[i][j] = "→"
         count += 1
     for i in range(a + 1, n - a):
-        m[i][j] = count
+        # m[i][j] = count
+        m[i][j] = "↓"
         count += 1
     for j in range(-(2 + a), -(n + 1 - a), -1):
-        m[i][j] = count
+        # m[i][j] = count
+        m[i][j] = "←"
         count += 1
     for i in range(-(2 + a), -(n - a), -1):
-        m[i][j] = count
+        # m[i][j] = count
+        m[i][j] = "↑"
         count += 1
     a += 1
 
