@@ -14,13 +14,13 @@ Sample Output:
 
 Тестируется через stdin → stdout
 """
-n = 5
+n = 11
 # n = int(input())
 m = [[0 for j in range(n)] for i in range(n)]
 count = 1
 a = 0
 
-for i in range(n**2):
+for i in range(int(n/2 + 1)):
     for j in range(a, n - a):
         m[i][j] = count
         count += 1
@@ -36,6 +36,4 @@ for i in range(n**2):
     a += 1
 
 for i in range(n):
-    print()
-    for j in range(n):
-        print(m[i][j], end=' ')
+    print(*m[i])  # тут * значит распоковать значения массива
