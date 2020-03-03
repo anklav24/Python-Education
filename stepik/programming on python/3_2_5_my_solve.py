@@ -1,10 +1,10 @@
 def update_dictionary(d, key, value):
     if key in d:
-        d[key] = [value]
+        d[key].append(value)
     elif key not in d:
         d[2 * key] = [value]
     elif 2 * key not in d:
-        d[2 * key] = [value]
+        d[2 * key].append(value)
 
 
 d = {}
