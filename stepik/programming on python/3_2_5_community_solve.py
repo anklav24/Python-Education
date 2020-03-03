@@ -1,13 +1,6 @@
 def update_dictionary(d, key, value):
-    if key in d:
-        d[key].append(value)
-    elif key not in d:
-        if 2 * key in d:
-            d[2 * key].append(value)
-        else:
-            d[2 * key] = [value]
-    else:
-        d[2 * key].append(value)
+    key += key * (key not in d)
+    d[key] = d.get(key, []) + [value]
 
 
 d = {}
