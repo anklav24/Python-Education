@@ -12,4 +12,4 @@ for i in range(n):
         cache[x] = f(x)
 
 # TODO: Do something useful.
-
+# TODO: Test live template. Just let's start type "todo" and press "Tab" button. (Of course without quotes)
