@@ -1,5 +1,5 @@
 # from stepik.programming_on_python.modules.f_from_x import f
-from .modules.f_from_x import f
+from stepik.programming_on_python.modules.f_from_x import f
 
 n = int(input())
 cache = {}
