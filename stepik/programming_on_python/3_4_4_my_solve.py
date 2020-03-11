@@ -17,9 +17,12 @@ with open(dataset) as inf, open(answer, 'w') as ouf:
         count += 1
 
 with open(answer, 'a') as ouf:
-    ouf.write(str(round(first_sum / count, 9)) + ' ' + str(round(second_sum / count, 9)) + ' ' + str(round(third_sum / count, 9)))
+    ouf.write(str(round(first_sum / count, 9)) + ' ' + str(round(second_sum / count, 9)) + ' ' + str(round(third_sum / count, 9)) + '\n')
+    ouf.write(f'Count: {count}\n')  # Запись в файл с помощью f строк.
+    ouf.write(f'{first_sum / count}\n')
+    ouf.write('{}, {}\n'.format(first_sum / count, count))
+    ouf.write('test')
 
 with open(answer) as inf:
     for string in inf:
         print(string.strip())
-print('Count:', count)
