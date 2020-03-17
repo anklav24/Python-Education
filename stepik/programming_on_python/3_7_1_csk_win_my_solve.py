@@ -5,41 +5,38 @@
 # Спартак;1;ЦСКА;1
 # ЦСКА;0;Зенит;2
 # n = 3
+# [total_games, wins, draws, defeats, total_score]
 
 n = int(input())
 d = {}
 
-# [total_games, wins, draws, defeats, total_score]
 for i in range(n):
     results = input().strip().split(';')
-    print(results[1])
-    print(results[3])
-    # print(results[1] > results[3])  # Че за хрень почему не false? двузначные числа
 
     if results[0] not in d:
         d[results[0]] = [0, 0, 0, 0, 0]
     if results[2] not in d:
         d[results[2]] = [0, 0, 0, 0, 0]
 
-    if results[1] > results[3]:
+    if int(results[1]) > int(results[3]):
         d[results[0]][0] += 1  # total_games
         d[results[2]][0] += 1  # total_games
         d[results[0]][1] += 1  # win1
         d[results[2]][3] += 1  # defeats2
-        d[results[0]][4] = int(d[results[0]][0]) * 3  # total_score1
-    elif results[1] < results[3]:
+        d[results[0]][4] = int(d[results[0]][1]) * 3 + int(d[results[0]][2]) # total_score1
+    elif int(results[1]) < int(results[3]):
         d[results[0]][0] += 1  # total_games
         d[results[2]][0] += 1  # total_games
         d[results[2]][1] += 1  # win2
         d[results[0]][3] += 1  # defeats1
-        d[results[2]][4] = int(d[results[2]][0]) * 3  # total_score2
+        d[results[2]][4] = int(d[results[2]][1]) * 3 + int(d[results[2]][2]) # total_score2
     else:
         d[results[0]][0] += 1  # total_games
         d[results[2]][0] += 1  # total_games
         d[results[0]][2] += 1  # draws
         d[results[2]][2] += 1  # draws
-        d[results[0]][4] = int(d[results[0]][2])  # total_score1
-        d[results[2]][4] = int(d[results[2]][2])  # total_score2
+        d[results[0]][4] = int(d[results[0]][2]) + int(d[results[0]][1]) * 3  # total_score1
+        d[results[2]][4] = int(d[results[2]][2]) + int(d[results[2]][1]) * 3  # total_score2
 
 for key, value in d.items():
     print(f'{key}:', *value)
