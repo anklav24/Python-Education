@@ -3,3 +3,4 @@
 
 - Макет в figma.
 - Slick слайдер: https://kenwheeler.github.io/slick/
+- Шрифты: https://fonts.google.com/

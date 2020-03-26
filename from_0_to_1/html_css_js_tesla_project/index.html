@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,10 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
   <header class="header">
     <div class="container">
       <div class="header-top">
@@ -39,8 +38,106 @@
         </div>
     </div>
   </header>
+  <section class="slider-top">
+    <div class="slider">
+      <div class="slider__item" style="background-image: url(images/slide-1.png);"></div>
+      <div class="slider__item" style="background-image: url(images/slide-2.png);"></div>
+      <div class="slider__item" style="background-image: url(images/slide-3.png);"></div>
+    </div>
+  </section>
+  <section class="statistics">
+    <div class="container">
+      <div class="statistics-items">
+        <div class="statistics-item">
+          <div class="statistics-item__title">
+          </div>
+            Двигатель
+          <div class="statistics-item__num">
+            2,1 <span>сек</span>
+          </div>
+          <div class="statistics-item__descr">
+            разгон до 100 км
+          </div>
+        </div>
+        <div class="statistics-item">
+          <div class="statistics-item__title">
+          </div>
+            Батарея
+          <div class="statistics-item__num">
+            1000 <span>км</span>
+          </div>
+          <div class="statistics-item__descr">
+            запас хода
+          </div>
+        </div>
+        <div class="statistics-item">
+          <div class="statistics-item__title">
+          </div>
+            Скорость
+          <div class="statistics-item__num statistics-item__num--speed">
+            400 <span>км/ч</span>
+          </div>
+          <div class="statistics-item__descr">
+            макс скорость
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="container">
+    <img src="images/selection-img.png" alt="">
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages-inner">
+        <div class="advantages-inner__row">
+
+          <div class="advantages-descr">
+            <div class="advantages__title">Скорость</div>
+            <div class="advantages__text">
+              Самый
+              быстроразгоняющийся
+              серийный автомобиль
+              из когда-либо созданных
+            </div>
+          </div>
+
+          <div class="advantages__img">
+            <img src="images/advantages-1.png" alt="">
+          </div>
+        </div>
+
+        <div class="advantages-inner__row">
+          <div class="advantages__img">
+            <img src="images/advantages-2.png" alt="">
+          </div>
+
+          <div class="advantages-descr">
+            <div class="advantages__text">
+              <ul>
+                <li>Датчик дождя</li>
+                <li>Датчик света</li>
+                <li>Автопилот</li>
+                <li>Навигационная система</li>
+                <li>Обогрев зеркал</li>
+                <li>Усилитель руля</li>
+                <li>Панорамная крыша</li>
+                <li>Ксеноновые фары</li>
+              </ul>
+            </div>
+            <div class="advantages__title advantages__title--bottom">Преимушества</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
