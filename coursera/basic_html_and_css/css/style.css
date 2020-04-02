@@ -1,0 +1,11 @@
+body{
+  font-size: 24px;
+}
+.checkbox_1{
+  display: flex;
+  justify-content: left;
+}
+.checkbox_2{
+  display: flex;
+  justify-content: left;
+}
