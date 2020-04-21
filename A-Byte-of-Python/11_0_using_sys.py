@@ -1,5 +1,5 @@
-import os
 import sys
+import os
 
 print('command line arguments:')
 for i in sys.argv:
