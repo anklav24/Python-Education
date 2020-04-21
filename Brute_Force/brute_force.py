@@ -1,10 +1,10 @@
 import time
 from threading import Thread
 
+from Brute_Force.generators.from_users_file import get_next_str as get_next_login
 # from generators.from_passwords_file import get_next_str as get_next_password
-from generators.from_passwords_file import get_next_str as get_next_password
-from generators.from_users_file import get_next_str as get_next_login
-from requesters.forms_query import request
+from Brute_Force.generators.from_passwords_file import get_next_str as get_next_password
+from Brute_Force.requesters.forms_query import request
 
 hacked_users = {}
 attempts = 3
