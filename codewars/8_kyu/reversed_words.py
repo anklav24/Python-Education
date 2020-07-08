@@ -4,6 +4,7 @@ def reverseWords(str):
     lst.reverse()
     return ' '.join(lst)
 
+
 def reverseWords(str: str) -> str:
     """Reverses all of the words within the string passed in."""
     return ' '.join(str.split()[::-1])
