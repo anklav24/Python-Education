@@ -1,0 +1,1 @@
+[Environment]::SetEnvironmentVariable("YOUR_API_KEY", "YOUR_API_KEY_IS_HERE_1", "User")
