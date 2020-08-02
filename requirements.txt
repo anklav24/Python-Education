@@ -1,3 +1,6 @@
-requests
-flask
-
+requests~=2.22.0
+flask~=1.1.1
+hypothesis~=5.23.8
+pytest~=6.0.1
+colorama~=0.4.3
+python-dotenv~=0.14.0

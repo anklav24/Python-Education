@@ -4,7 +4,10 @@ for key, values in os.environ.items():
     print(f"{key}: {values}")
 print()
 
+print(os.environ.get('YOUR_API_KEY'))
+print(os.getenv('YOUR_API_KEY'))
 print()
+
 print(os.environ['USERNAME'])
 print(os.environ['USERDOMAIN'])
 print(os.environ.get('I_DONT_EXIST'))
@@ -25,4 +28,3 @@ os.environ['API_KEY'] = 'asdfjklquweiuoijkasdfl'
 print(os.environ.get('API_KEY'))
 print()
 
-print(os.environ.get('YOUR_API_KEY'))
