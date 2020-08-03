@@ -1,4 +1,4 @@
-from testing.print.full_name import full_name
+from testing.full_name import full_name
 
 print("Quit 'Q'")
 
