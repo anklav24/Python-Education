@@ -1,6 +1,6 @@
 import pytest
-from src.pages.header_page import HeaderPage
-from src.pages.login_page import LoginPage
+from testing.pytest.ui_tests.src.pages.header_page import HeaderPage
+from testing.pytest.ui_tests.src.pages.login_page import LoginPage
 
 
 @pytest.mark.usefixtures("get_driver")
