@@ -2,7 +2,7 @@ import logging
 import requests
 
 
-logging.basicConfig(level='DEBUG', filename='mylog.log')
+logging.basicConfig(level='DEBUG', filename='001_mylog.log')
 logger = logging.getLogger()
 print(logger)
 
