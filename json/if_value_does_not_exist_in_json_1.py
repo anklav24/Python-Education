@@ -2,6 +2,11 @@
 import json
 from collections import defaultdict
 
+"""
+Отличие defaultdict в том что он изменяет сам словарь,
+а метод словаря .get просто возвращает значение
+"""
+
 message = '{"user":"user_name", "token": "user_token"}'
 
 message = json.loads(message)
