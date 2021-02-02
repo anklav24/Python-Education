@@ -1,0 +1,3 @@
+- https://knigun.com/post/exception-logging-decorator/
+- https://www.cyberforum.ru/python-beginners/thread2417289.html
+- https://webdevblog.ru/logging-v-python/

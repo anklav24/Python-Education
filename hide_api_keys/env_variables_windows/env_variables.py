@@ -28,3 +28,4 @@ os.environ['API_KEY'] = 'asdfjklquweiuoijkasdfl'
 print(os.environ.get('API_KEY'))
 print()
 
+print(os.environ.get("password_in_pycharm"))
