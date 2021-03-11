@@ -2,7 +2,7 @@ Install dotenv.
 `pip install python-dotenv`
 
 Add the .env file with sensitive variables.
-Add the .env file to .gitignore
+Add the .env file to .gitignore THIS IS REALLY IMPORTANT, NO KIDDING.
 
 А нахрена вот это вот все?
 - В линухе у пользователя может не быть прав для исправления системных файлов в которые нужно заносить переменные.
