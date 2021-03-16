@@ -1,3 +1,14 @@
+SELECT * FROM shows;
+SELECT * FROM genres;
+
+SELECT * FROM shows JOIN genres;
+SELECT * FROM shows JOIN genres ON shows.id = genres.id;
+SELECT * FROM shows INNER JOIN genres ON shows.id = genres.id;
+
+SELECT * FROM shows LEFT JOIN genres;
+SELECT * FROM shows LEFT JOIN genres ON shows.id = genres.id;
+SELECT title, name FROM shows LEFT JOIN genres ON shows.id = genres.id;
+
 SELECT * FROM shows WHERE title = "friends";
 SELECT * FROM genres WHERE name LIKE "action";
 SELECT * FROM genres WHERE name LIKE "Adventure";
@@ -8,7 +19,6 @@ SELECT DISTINCT(name) FROM genres WHERE id IN (SELECT id FROM shows WHERE title 
 
 SELECT id FROM shows WHERE title = "friends";
 
-SELECT * FROM genres;
 SELECT id as number, title FROM shows;
 
 SELECT DISTINCT(title) FROM shows;
