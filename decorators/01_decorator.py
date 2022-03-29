@@ -12,4 +12,5 @@ def foo():
     print("Hello, world!")
 
 
-foo()
+if __name__ == '__main__':
+    foo()

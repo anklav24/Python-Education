@@ -7,3 +7,10 @@ parser.add_argument('--reload', help='reload_true')
 
 args = parser.parse_args()
 print(args)
+
+query = 'SELECT * FROM data'
+
+i = 0
+# while True:
+#     i += 1
+#     print(i)
