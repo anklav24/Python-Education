@@ -22,8 +22,8 @@ def main():
             fix_hairline=True,
             )
 
-    site = 'https://mynickname.com/generate'
-    # site = 'https://kontur.ru/market'
+    # site = 'https://mynickname.com/generate'
+    site = 'https://kontur.ru/market'
     # site = 'https://google.com'
     open_on_the_second_monitor(driver)
     driver.get(site)
