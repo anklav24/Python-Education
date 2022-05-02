@@ -199,3 +199,4 @@ $RECYCLE.BIN/
   
 # Windows shortcuts 
 *.lnk 
+/selenium_lessons/zproger/session.pkl

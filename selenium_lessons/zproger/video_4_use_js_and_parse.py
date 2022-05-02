@@ -22,6 +22,11 @@ def main():
         sitename = browser.find_element(By.CSS_SELECTOR, '#some_random_variants_web_2 > div:nth-child(1)')
         print(sitename.text)
 
+    js_function_return = browser.execute_script("return generateAnotherWebsiteNameVariants(this, 'web_1');")
+    print()
+    print('js_function_return')
+    print(js_function_return)
+
     browser.quit()
 
 
