@@ -1,3 +1,6 @@
+from abc import ABCMeta
+
+
 while True:
     number = int(input())
     if number < 10:
