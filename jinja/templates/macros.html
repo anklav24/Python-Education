@@ -1,0 +1,17 @@
+<!-- Create an HTML file called "macros.html" -->
+{% macro person_table(persons) %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Weight</th>
+        </tr>
+        {% for person in persons %}
+            <tr>
+                <td>{{ person.name }}</td>
+                <td>{{ person.old }}</td>
+                <td>{{ person.weight }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endmacro %}
